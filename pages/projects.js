@@ -16,7 +16,7 @@ const Projects = () => {
             <SimpleGrid columns={[1,1,2]} gap={6}>
                 <Section>
                     <ProjectGridItem id="tindog" title="Tindog" thumbnail={thumbTindog}>
-                        Find the love of your dog's life or your money back. 
+                        Find the love of your dog&apos;s life or your money back. 
                     </ProjectGridItem>
                 </Section>
                 <Section>
@@ -33,7 +33,7 @@ const Projects = () => {
                     User Experience
                 </Heading>
             </Section>
-            
+
         </Container>
         // </Layout>
     )
