@@ -3,7 +3,7 @@ import Section from "../components/section";
 import { ProjectGridItem } from "../components/grid-item";
 import Layout from "../components/layouts/article";
 
-import thumbTindog from "../public/images/projects/tindog/tindog_banner.png"
+import thumbTindog from "../public/images/projects/tindog/tindog_banner.jpg"
 import thumbAsc from "../public/images/projects/asc/asc_banner.jpeg"
 
 const Projects = () => {
