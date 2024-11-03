@@ -1,5 +1,4 @@
-// import { useState, useEffect, useRef, useCallback } from 'react'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { Box, Spinner } from '@chakra-ui/react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
@@ -11,6 +10,7 @@ function easeOutCirc(x) {
 
 const IsometricRoom = () => {
     const refContainer = useRef()
+    const modelLoadedRef = useRef(false) // 使用 useRef 来跟踪模型是否已经加载
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
     const [_camera, setCamera] = useState()
@@ -24,6 +24,16 @@ const IsometricRoom = () => {
     )
     const [scene] = useState(new THREE.Scene())
     const [_controls, setControls] = useState()
+
+    const handleWindowResize = useCallback(() => {
+        const { current: container } = refContainer
+        if (container && renderer) {
+            const scW = container.clientWidth
+            const scH = container.clientHeight
+
+            renderer.setSize(scW, scH)
+        }
+    }, [renderer])
 
     /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
@@ -44,7 +54,7 @@ const IsometricRoom = () => {
 
             // 640 -> 240
             // 8 -> 6
-            const scale = scH * 0.005 + 4.8
+            const scale = scH * 0.005 + 0.8
             const camera = new THREE.OrthographicCamera(
                 -scale,
                 scale,
@@ -55,7 +65,7 @@ const IsometricRoom = () => {
             )
             camera.position.copy(initialPosition)
             camera.lookAt(target)
-            setCamera(camera) 
+            setCamera(camera)
 
             const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
             scene.add(ambientLight)
@@ -65,13 +75,31 @@ const IsometricRoom = () => {
             controls.target = target
             setControls(controls)
 
-            loadGlTFModel(scene, '/room.glb', {
-                receiveShadow: false,
-                castShadow: false
-            }).then(() => {
-                animate()
-                setLoading(false)
-            })
+            // // if (scene.children.length === 0) { 
+            // loadGlTFModel(scene, '/room.glb', {
+            //     receiveShadow: false,
+            //     castShadow: false
+            // }).then((obj) => {
+            //     obj.position.y += 2
+            //     animate()
+            //     setLoading(false)
+            // })
+            // // }
+
+            if (!modelLoadedRef.current) { // 使用 useRef 来检查模型是否已经加载
+                loadGlTFModel(scene, '/room.glb', {
+                    receiveShadow: false,
+                    castShadow: false
+                }).then((obj) => {
+                    obj.position.y += 1.5
+                    animate()
+                    setLoading(false)
+                    modelLoadedRef.current = true // 更新 useRef
+                }).catch((error) => {
+                    console.error('Error loading model:', error)
+                    setLoading(false)
+                })
+            }
 
             let req = null
             let frame = 0
@@ -87,7 +115,8 @@ const IsometricRoom = () => {
                     camera.position.y = 10
                     camera.position.x = p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
                     camera.position.z = p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
-                    camera.lookAt(target)   
+                    // camera.position.z = 5
+                    camera.lookAt(target)
                 } else {
                     controls.update()
                 }
@@ -97,17 +126,29 @@ const IsometricRoom = () => {
 
             return () => {
                 cancelAnimationFrame(req)
-                renderer.dispose()
+                renderer.dispose();
+                // if (renderer) {
+                //     renderer.dispose();
+                //     renderer.forceContextLoss(); // 释放 WebGL 上下文，防止残留
+                // }
+                // scene.clear() 
             }
         }
     }, [])
+
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowResize, false)
+        return () => {
+            window.removeEventListener('resize', handleWindowResize, false)
+        }
+    }, [renderer, handleWindowResize])
 
     return (
         <Box
             ref={refContainer}
             className="isometric-room"
             m="auto"
-            at={['-20px', '60px', '-120px']}
+            mt={['-20px', '60px', '-120px']}
             mb={['-40px', '-140px', '-200px']}
             w={[280, 480, 640]}
             h={[280, 480, 640]}
@@ -123,7 +164,7 @@ const IsometricRoom = () => {
                     mt="calc(0px - var(--spinner-size))"
                 />
             )}
-            
+
         </Box>
     )
 }
