@@ -5,6 +5,7 @@ import Layout from "../components/layouts/article";
 
 import thumbTindog from "../public/images/projects/tindog/tindog_banner.jpg"
 import thumbAsc from "../public/images/projects/asc/asc_banner.jpeg"
+import thumbDrumKit from "../public/images/projects/drumkit/drumkit_banner.jpg"
 
 const Projects = () => {
     return (
@@ -23,6 +24,11 @@ const Projects = () => {
                     <Section>
                         <ProjectGridItem id="asc" title="Algebraic Simplification Cesar" thumbnail={thumbAsc}>
                             Unit testing and build bridges between Rust and Python.
+                        </ProjectGridItem>
+                    </Section>
+                    <Section>
+                        <ProjectGridItem id="drumkit" title="Drum Kit" thumbnail={thumbDrumKit}>
+                            A simple online drum kit.
                         </ProjectGridItem>
                     </Section>
                 </SimpleGrid>
