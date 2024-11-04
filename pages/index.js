@@ -53,9 +53,7 @@ const Page = () => {
           </Heading>
           <Paragraph>Zhufan is a full-stack developer and cat lover based in Cat Land with 
             a passion for cat experience research. When not online, she loves hanging out with 
-            her cat. Currently, she is living off her own product called {' '}
-            <NextLink href="/projects/tindog"><Link>TinDog</Link> </NextLink>
-            .
+            her cat. Currently, she is seeking for a full-time software engineering position in the United States.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">

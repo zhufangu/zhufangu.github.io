@@ -75,31 +75,31 @@ const IsometricRoom = () => {
             controls.target = target
             setControls(controls)
 
-            // // if (scene.children.length === 0) { 
-            // loadGlTFModel(scene, '/room.glb', {
-            //     receiveShadow: false,
-            //     castShadow: false
-            // }).then((obj) => {
-            //     obj.position.y += 2
-            //     animate()
-            //     setLoading(false)
-            // })
-            // // }
+            // if (scene.children.length === 0) { 
+            loadGlTFModel(scene, '/room.glb', {
+                receiveShadow: false,
+                castShadow: false
+            }).then((obj) => {
+                obj.position.y += 2
+                animate()
+                setLoading(false)
+            })
+            // }
 
-            if (!modelLoadedRef.current) { // 使用 useRef 来检查模型是否已经加载
-                loadGlTFModel(scene, '/room.glb', {
-                    receiveShadow: false,
-                    castShadow: false
-                }).then((obj) => {
-                    obj.position.y += 1.5
-                    animate()
-                    setLoading(false)
-                    modelLoadedRef.current = true // 更新 useRef
-                }).catch((error) => {
-                    console.error('Error loading model:', error)
-                    setLoading(false)
-                })
-            }
+            // if (!modelLoadedRef.current) { // 使用 useRef 来检查模型是否已经加载
+            //     loadGlTFModel(scene, '/room.glb', {
+            //         receiveShadow: false,
+            //         castShadow: false
+            //     }).then((obj) => {
+            //         obj.position.y += 1.5
+            //         animate()
+            //         setLoading(false)
+            //         modelLoadedRef.current = true // 更新 useRef
+            //     }).catch((error) => {
+            //         console.error('Error loading model:', error)
+            //         setLoading(false)
+            //     })
+            // }
 
             let req = null
             let frame = 0
