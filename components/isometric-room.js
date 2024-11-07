@@ -10,7 +10,7 @@ function easeOutCirc(x) {
 
 const IsometricRoom = () => {
     const refContainer = useRef()
-    const modelLoadedRef = useRef(false) // 使用 useRef 来跟踪模型是否已经加载
+    const modelLoadedRef = useRef(false) // to check if the model has been loaded
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
     const [_camera, setCamera] = useState()
@@ -86,20 +86,6 @@ const IsometricRoom = () => {
             })
             // }
 
-            // if (!modelLoadedRef.current) { // 使用 useRef 来检查模型是否已经加载
-            //     loadGlTFModel(scene, '/room.glb', {
-            //         receiveShadow: false,
-            //         castShadow: false
-            //     }).then((obj) => {
-            //         obj.position.y += 1.5
-            //         animate()
-            //         setLoading(false)
-            //         modelLoadedRef.current = true // 更新 useRef
-            //     }).catch((error) => {
-            //         console.error('Error loading model:', error)
-            //         setLoading(false)
-            //     })
-            // }
 
             let req = null
             let frame = 0
@@ -127,11 +113,6 @@ const IsometricRoom = () => {
             return () => {
                 cancelAnimationFrame(req)
                 renderer.dispose();
-                // if (renderer) {
-                //     renderer.dispose();
-                //     renderer.forceContextLoss(); // 释放 WebGL 上下文，防止残留
-                // }
-                // scene.clear() 
             }
         }
     }, [])
