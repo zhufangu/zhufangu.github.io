@@ -26,7 +26,7 @@ const Logo = () => {
             <LogoBox>                
                 <Image src={pawImg} width={20} height={20} alt="logo" />
                 <Text>
-                    {/* Add any text or additional elements here */}
+                    Zhufan Gu
                 </Text>
             </LogoBox>
         </Link>

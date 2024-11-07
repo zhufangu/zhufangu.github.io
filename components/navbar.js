@@ -67,9 +67,9 @@ const Navbar = props => {
                     flexGrow={ 1}
                     mt={{ base: 4, md: 0 }}
                     >
-                        <LinkItem href="/aboutme" path={path}>
+                        {/* <LinkItem href="/index" path={path}>
                             About Me
-                        </LinkItem>
+                        </LinkItem> */}
                         <LinkItem href="/projects" path={path}>
                             Projects
                         </LinkItem>
@@ -86,9 +86,9 @@ const Navbar = props => {
                             <Menu>
                                 <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options"/>
                                 <MenuList>
-                                    <NextLink href="/aboutme" passHref>
+                                    {/* <NextLink href="/aboutme" passHref>
                                         <MenuItem as={Link}>About Me</MenuItem>
-                                    </NextLink>
+                                    </NextLink> */}
                                     <NextLink href="/projects" passHref>
                                         <MenuItem as={Link}>Projects</MenuItem>
                                     </NextLink>
