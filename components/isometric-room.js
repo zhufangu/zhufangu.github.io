@@ -10,7 +10,6 @@ function easeOutCirc(x) {
 
 const IsometricRoom = () => {
     const refContainer = useRef()
-    const modelLoadedRef = useRef(false) // to check if the model has been loaded
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
     const [_camera, setCamera] = useState()
