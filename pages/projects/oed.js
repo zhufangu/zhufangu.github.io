@@ -27,7 +27,7 @@ const Project = () => {
                         <P>
                             Open Energy Dashboard is a user-friendly tool to display energy information
                             from smart energy meters or uploaded via CSV files. It is optimized for non-technical users
-                            with a simple interface that provides access to your organization's energy data.
+                            with a simple interface that provides access to your organization&apos; s energy data.
                         </P>
                         <P>
                             OED handles various energy data types including weight, volume, temperature, and power.
