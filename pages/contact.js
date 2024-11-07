@@ -1,4 +1,4 @@
-import { IoLogoInstagram, IoLogoGithub, IoLogo, IoLogoLinkedin } from 'react-icons/io';
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 import { MdOutlineEmail } from "react-icons/md";
 import { List, ListItem, Container, Button, Link, Icon, Heading } from '@chakra-ui/react';
 import Layout from '../components/layouts/article';
