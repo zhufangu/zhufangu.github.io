@@ -48,11 +48,11 @@ const Project = () => {
                 that can be edited.
               </ListItem>
               <ListItem>
-                Conversational Recipe Optimization: The app acts as an "AI
-                chef," allowing users to refine and optimize a generated recipe
-                by chatting with the system. It can handle requests such as
-                "simplify the steps," "reduce calories," or "add more
-                vegetables".
+                Conversational Recipe Optimization: The app acts as an &quot;AI
+                chef,&quot; allowing users to refine and optimize a generated
+                recipe by chatting with the system. It can handle requests such
+                as &quot;simplify the steps,&quot; &quot;reduce calories,&quot;
+                or &quot;add more vegetables&quot;.
               </ListItem>
               <ListItem>
                 AI Image Generation: Once a recipe is finalized, the application
