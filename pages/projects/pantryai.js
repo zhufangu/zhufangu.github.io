@@ -29,8 +29,8 @@ const Project = () => {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://kaifan.vercel.app/">
-              https://kaifan.vercel.app/ <ExternalLinkIcon mx="2px" />
+            <Link href="https://pantryai.zhufangu.com">
+              https://pantryai.zhufangu.com/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
