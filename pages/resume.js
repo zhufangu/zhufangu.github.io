@@ -16,7 +16,7 @@ const Resume = () => {
         <Box>
           <iframe
             src="/resume.pdf"
-            width="150%"
+            width="100%"
             height="800px"
             style={{ border: 'none' }}
           />
