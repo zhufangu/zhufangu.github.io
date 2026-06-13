@@ -103,6 +103,7 @@ const Project = () => {
         <ProjectImage
           src="/images/projects/carbonviz/carbonviz_02.png"
           alt="Carbon footprint postcard — full sketch"
+          caption="The postcard: four firework patterns (front) compare my footprint with the CS5044, UK, and world averages, while the legend (back) explains the color and mark encodings."
         />
       </Container>
     </Layout>
