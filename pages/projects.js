@@ -11,6 +11,7 @@ import thumbPantryAI from '../public/images/projects/pantryai/pantryai_banner.jp
 import thumbCarbonViz from '../public/images/projects/carbonviz/carbonviz_banner.png'
 import thumbJournalists from '../public/images/projects/journalists/journalists_banner.png'
 import thumbAnime from '../public/images/projects/anime/anime_banner.png'
+import thumbDisplays from '../public/images/projects/displays/displays_banner.png'
 
 const Projects = () => {
   return (
@@ -99,6 +100,16 @@ const Projects = () => {
                 thumbnail={thumbAnime}
               >
                 An interactive D3.js exploration of two decades of anime ratings.
+              </ProjectGridItem>
+            </Section>
+            <Section>
+              <ProjectGridItem
+                id="displays"
+                title="Displays Across Campus"
+                thumbnail={thumbDisplays}
+              >
+                A user-centred design for discovering and proposing campus
+                displays.
               </ProjectGridItem>
             </Section>
           </SimpleGrid>
