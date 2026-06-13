@@ -113,6 +113,17 @@ const Projects = () => {
                 displays.
               </ProjectGridItem>
             </Section>
+          </SimpleGrid>
+        </Section>
+
+        <Section delay={0.4}>
+          <Divider my={6} />
+
+          <Heading as="h3" fontSize={20} mb={4}>
+            VR &amp; 3D
+          </Heading>
+
+          <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
               <ProjectGridItem
                 id="virtualdive"
