@@ -8,7 +8,16 @@
       "Bash(mkdir -p carbonviz)",
       "Bash(cp /tmp/banner_try.png carbonviz/carbonviz_banner.png)",
       "Bash(cp /tmp/legend_try.png carbonviz/carbonviz_01.png)",
-      "Bash(cp /tmp/full.png carbonviz/carbonviz_02.png)"
+      "Bash(cp /tmp/full.png carbonviz/carbonviz_02.png)",
+      "Bash(cp rep2_p2.png crop_src.png)",
+      "Bash(sips --cropOffset 470 285 -c 480 1090 crop_src.png --out dash_try.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight dash_try.png)",
+      "Bash(cp report_p1.png c1b.png)",
+      "Bash(sips --cropOffset 1700 558 -c 555 600 c1b.png --out highlight.png)",
+      "Bash(cp /tmp/rep2_p3.png journalists_01.png)",
+      "Bash(cp /tmp/highlight.png journalists_02.png)",
+      "Bash(cp /tmp/china.png journalists_03.png)",
+      "Bash(npx next *)"
     ]
   }
 }

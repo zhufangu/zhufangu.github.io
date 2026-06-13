@@ -9,6 +9,7 @@ import thumbDrumKit from '../public/images/projects/drumkit/drumkit_banner.jpg'
 import thumbOed from '../public/images/projects/oed/oed_banner.jpeg'
 import thumbPantryAI from '../public/images/projects/pantryai/pantryai_banner.jpg'
 import thumbCarbonViz from '../public/images/projects/carbonviz/carbonviz_banner.png'
+import thumbJournalists from '../public/images/projects/journalists/journalists_banner.png'
 
 const Projects = () => {
   return (
@@ -78,6 +79,16 @@ const Projects = () => {
               >
                 A Dear Data&ndash;inspired sketch of my personal carbon
                 footprint.
+              </ProjectGridItem>
+            </Section>
+            <Section>
+              <ProjectGridItem
+                id="journalists"
+                title="Journalists Under Threat"
+                thumbnail={thumbJournalists}
+              >
+                An interactive Tableau dashboard on journalists killed and
+                imprisoned worldwide.
               </ProjectGridItem>
             </Section>
           </SimpleGrid>
