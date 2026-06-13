@@ -8,6 +8,7 @@ import thumbAsc from '../public/images/projects/asc/asc_banner.jpeg'
 import thumbDrumKit from '../public/images/projects/drumkit/drumkit_banner.jpg'
 import thumbOed from '../public/images/projects/oed/oed_banner.jpeg'
 import thumbPantryAI from '../public/images/projects/pantryai/pantryai_banner.jpg'
+import thumbCarbonViz from '../public/images/projects/carbonviz/carbonviz_banner.png'
 
 const Projects = () => {
   return (
@@ -67,6 +68,19 @@ const Projects = () => {
           <Heading as="h3" fontSize={20} mb={4}>
             User Experience
           </Heading>
+
+          <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <Section>
+              <ProjectGridItem
+                id="carbonviz"
+                title="A Year of Carbon Emissions"
+                thumbnail={thumbCarbonViz}
+              >
+                A Dear Data&ndash;inspired sketch of my personal carbon
+                footprint.
+              </ProjectGridItem>
+            </Section>
+          </SimpleGrid>
         </Section>
       </Container>
     </Layout>

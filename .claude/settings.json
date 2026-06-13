@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sips -g pixelWidth -g pixelHeight /tmp/p1_test.png)",
+      "Bash(python3 -c \"import Quartz; print\\('quartz ok'\\)\")",
+      "Read(//tmp/**)",
+      "Read(//private/tmp/**)",
+      "Bash(mkdir -p carbonviz)",
+      "Bash(cp /tmp/banner_try.png carbonviz/carbonviz_banner.png)",
+      "Bash(cp /tmp/legend_try.png carbonviz/carbonviz_01.png)",
+      "Bash(cp /tmp/full.png carbonviz/carbonviz_02.png)"
+    ]
+  }
+}
