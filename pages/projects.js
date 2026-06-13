@@ -12,6 +12,7 @@ import thumbCarbonViz from '../public/images/projects/carbonviz/carbonviz_banner
 import thumbJournalists from '../public/images/projects/journalists/journalists_banner.png'
 import thumbAnime from '../public/images/projects/anime/anime_banner.png'
 import thumbDisplays from '../public/images/projects/displays/displays_banner.png'
+import thumbVirtualDive from '../public/images/projects/virtualdive/virtualdive_banner.png'
 
 const Projects = () => {
   return (
@@ -110,6 +111,15 @@ const Projects = () => {
               >
                 A user-centred design for discovering and proposing campus
                 displays.
+              </ProjectGridItem>
+            </Section>
+            <Section>
+              <ProjectGridItem
+                id="virtualdive"
+                title="Virtual Dive Experience"
+                thumbnail={thumbVirtualDive}
+              >
+                An MSc dissertation on 3D modelling for immersive virtual diving.
               </ProjectGridItem>
             </Section>
           </SimpleGrid>
