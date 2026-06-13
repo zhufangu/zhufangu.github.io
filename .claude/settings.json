@@ -17,7 +17,15 @@
       "Bash(cp /tmp/rep2_p3.png journalists_01.png)",
       "Bash(cp /tmp/highlight.png journalists_02.png)",
       "Bash(cp /tmp/china.png journalists_03.png)",
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "Bash(cp grp_p4.png p4b.png)",
+      "Bash(sips --cropOffset 620 430 -c 580 800 p4b.png --out fig5.png)",
+      "Bash(cp grp_p3.png wc.png)",
+      "Bash(sips --cropOffset 760 820 -c 330 400 wc.png --out fig3.png)",
+      "Bash(cp /tmp/fig1.png anime/anime_banner.png)",
+      "Bash(cp /tmp/fig5.png anime/anime_01.png)",
+      "Bash(cp /tmp/fig3.png anime/anime_02.png)",
+      "Bash(cp /tmp/fig6.png anime/anime_03.png)"
     ]
   }
 }

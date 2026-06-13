@@ -10,6 +10,7 @@ import thumbOed from '../public/images/projects/oed/oed_banner.jpeg'
 import thumbPantryAI from '../public/images/projects/pantryai/pantryai_banner.jpg'
 import thumbCarbonViz from '../public/images/projects/carbonviz/carbonviz_banner.png'
 import thumbJournalists from '../public/images/projects/journalists/journalists_banner.png'
+import thumbAnime from '../public/images/projects/anime/anime_banner.png'
 
 const Projects = () => {
   return (
@@ -89,6 +90,15 @@ const Projects = () => {
               >
                 An interactive Tableau dashboard on journalists killed and
                 imprisoned worldwide.
+              </ProjectGridItem>
+            </Section>
+            <Section>
+              <ProjectGridItem
+                id="anime"
+                title="Anime Trends Explorer"
+                thumbnail={thumbAnime}
+              >
+                An interactive D3.js exploration of two decades of anime ratings.
               </ProjectGridItem>
             </Section>
           </SimpleGrid>
