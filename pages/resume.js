@@ -114,6 +114,38 @@ const Resume = () => {
             Experience
           </Heading>
           <Entry
+            role="Full-Stack & AI Engineer"
+            org="faishion.ai"
+            date="Mar 2026 – Present"
+          >
+            <Bullet>
+              Built an LLM shopping assistant on the <b>Vercel AI SDK</b> with
+              multi-step tool calling, designing a search→finalize protocol that
+              caches candidates across turns and returns confidence-ranked
+              results; fixed a retrieval brand-filter bug that recovered{' '}
+              <b>1,816</b> previously-hidden products.
+            </Bullet>
+            <Bullet>
+              Engineered an affiliate product-ingestion pipeline (
+              <b>TypeScript / Prisma / PostgreSQL</b>) importing catalogs from
+              Impact and Shopify, with database-level unique-index dedup,
+              category/gender canonicalization, and a <b>Playwright</b> fallback
+              that defeats Cloudflare bot challenges (~3,200 LOC).
+            </Bullet>
+            <Bullet>
+              Shipped a social layer (following with live follower counts,
+              community posts, interactive likes) in a{' '}
+              <b>Next.js 15 / React 19</b> app, extending the <b>Prisma</b>{' '}
+              schema through to public profile pages.
+            </Bullet>
+            <Bullet>
+              Built an in-page virtual try-on dock for a <b>Chrome MV3</b>{' '}
+              extension (<b>Plasmo / React</b>) — a shared background task
+              manager with progress UI, persisted dismissal state, and cross-tab
+              sync via chrome.storage events.
+            </Bullet>
+          </Entry>
+          <Entry
             // role="Software Engineer Intern"
             org="CodeDay Labs"
             date="Jun 2024 – Aug 2024"
