@@ -116,12 +116,12 @@ const Project = () => {
         <ProjectImage
           src="/images/projects/journalists/journalists_01.png"
           alt="Five Design Sheet — ideation sketches of the map, layout, focus view, and slider"
-          caption="Fig. 2 — Ideation with the Five Design Sheet method, exploring different layouts, focus views, and interactions before settling on the final concept."
+          caption="Fig. 2 — Narrowing the year-range slider to 2003–2010 filters every linked view at once, isolating the Iraq War period."
         />
         <ProjectImage
           src="/images/projects/journalists/journalists_02.png"
           alt="Year-range slider narrowed to 2003–2010, filtering the map, tooltip, and bar charts together"
-          caption="Fig. 3 — Narrowing the year-range slider to 2003–2010 filters every linked view at once, isolating the Iraq War period."
+          caption="Fig. 3 — Ideation with the Five Design Sheet method, exploring different layouts, focus views, and interactions before settling on the final concept."
         />
         <ProjectImage
           src="/images/projects/journalists/journalists_03.png"

@@ -104,22 +104,22 @@ const Project = () => {
         </List>
 
         <ProjectImage
-          src="/images/projects/virtualdive/virtualdive_banner.png"
+          src="/images/projects/virtualdive/virtualdive_01.png"
           alt="Rendered 3D model of a Ballan Wrasse fish"
           caption="Fig. 1 — A textured, rendered Ballan Wrasse: the project's signature marine model, built and animated in Blender."
         />
         <ProjectImage
-          src="/images/projects/virtualdive/virtualdive_01.png"
+          src="/images/projects/virtualdive/virtualdive_02.png"
           alt="Rendered 3D model of a lighthouse on a rocky base"
           caption="Fig. 2 — A rendered lighthouse, usable as a self-luminous landmark above water or scaled down as an underwater marker."
         />
         <ProjectImage
-          src="/images/projects/virtualdive/virtualdive_02.png"
+          src="/images/projects/virtualdive/virtualdive_03.png"
           alt="Rendered 3D sea urchin inside an underwater fog volume"
           caption="Fig. 3 — The animated sea urchin inside a fog volume, recreating the murky, light-scattered atmosphere of the deep."
         />
         <ProjectImage
-          src="/images/projects/virtualdive/virtualdive_03.png"
+          src="/images/projects/virtualdive/virtualdive_banner.png"
           alt="Rendered 3D terrain reconstructed from satellite and elevation data"
           caption="Fig. 4 — Real terrain reconstructed in Blender with BlenderGIS, merging Google Maps satellite imagery with NASA SRTM elevation data."
         />

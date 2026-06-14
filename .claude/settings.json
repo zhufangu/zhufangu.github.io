@@ -25,7 +25,19 @@
       "Bash(cp /tmp/fig1.png anime/anime_banner.png)",
       "Bash(cp /tmp/fig5.png anime/anime_01.png)",
       "Bash(cp /tmp/fig3.png anime/anime_02.png)",
-      "Bash(cp /tmp/fig6.png anime/anime_03.png)"
+      "Bash(cp /tmp/fig6.png anime/anime_03.png)",
+      "Bash(cp dive_p31.png u31b.png)",
+      "Bash(sips --cropOffset 752 365 -c 300 460 u31b.png --out dive_urchin.png)",
+      "Bash(ls -la ~/.claude/projects/-Users-zhufangu-Documents-projects-zhufangu-github-io/)",
+      "Read(//Users/zhufangu/.claude/projects/-Users-zhufangu-Documents-projects-zhufangu-github-io/**)",
+      "Bash(cp ~/.claude/projects/-Users-zhufangu-Documents-projects-zhufangu-github-io/bdce73bc-635b-4387-b1de-3dd2c8cfe9c1.jsonl \\\\ *)",
+      "Bash(git rev-list *)",
+      "Bash(git cat-file *)",
+      "Bash(sort -k2 -n -r)",
+      "Read(//Users/zhufangu/Documents/projects/zhufangu.github.io/pages/**)"
+    ],
+    "additionalDirectories": [
+      "/Users/zhufangu/.claude/projects/-Users-zhufangu-Documents-projects-zhufangu-github-io"
     ]
   }
 }

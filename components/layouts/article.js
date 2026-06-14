@@ -27,7 +27,7 @@ const Layout = ({ children, title }) => (
       {children}
       <GridItemStyle />
       <Box as="footer" textAlign="center" py={4} mt={8}>
-        © 2025 Zhufan Gu. All Rights Reserved.
+        © 2026 Zhufan Gu. All Rights Reserved.
       </Box>
     </>
   </motion.article>
