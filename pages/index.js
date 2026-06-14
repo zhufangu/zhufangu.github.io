@@ -25,7 +25,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hello, I&apos;m a software engineer based in United States.
+          Hello, I&apos;m a full-stack &amp; AI engineer based in the United States.
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -34,7 +34,7 @@ const Page = () => {
               Zhufan Gu
             </Heading>
 
-            <p>A software developer and UX researcher</p>
+            <p>Full-stack &amp; AI engineer building LLM-powered products</p>
           </Box>
           <Box
             flexShrink={0}
@@ -66,10 +66,12 @@ const Page = () => {
             About Me
           </Heading>
           <Paragraph>
-            Zhufan is a full-stack developer and cat lover based in Cat Land
-            with a passion for cat experience research. When not online, she
-            loves hanging out with her cat. Currently, she is seeking for a
-            full-time software engineering position in the United States.
+            Zhufan is a full-stack software engineer based in the United States,
+            focused on AI-powered product development. She builds end to end —
+            from Prisma/Postgres schemas and data pipelines to LLM agents on the
+            Vercel AI SDK and streaming React frontends. With a graduate
+            background in Human–Computer Interaction, she cares as much about how
+            a feature feels as how it ships. 
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
